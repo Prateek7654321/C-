@@ -1,0 +1,1 @@
+{"name":"Local: commonprefix","url":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\strings\\commonprefix.cpp","tests":[{"id":1689694142655,"input":"dog dogs doggg","output":"dog"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\strings\\commonprefix.cpp","group":"local","local":true}

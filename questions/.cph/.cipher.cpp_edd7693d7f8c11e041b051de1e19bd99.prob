@@ -1,0 +1,1 @@
+{"name":"Local: cipher","url":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\questions\\cipher.cpp","tests":[{"id":1686201105974,"input":"3\n8\nabacabac\n5\nqzxcq\n20\nccooddeeffoorrcceess","output":"ac\nq\ncodeforces"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\questions\\cipher.cpp","group":"local","local":true}

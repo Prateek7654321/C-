@@ -1,0 +1,1 @@
+{"name":"Local: q19","url":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\questions\\q19.cpp","tests":[{"id":1684958865117,"input":"ab\nAB","output":"0"},{"id":1685259186286,"input":"abs\nAbz","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\questions\\q19.cpp","group":"local","local":true}

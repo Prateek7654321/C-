@@ -1,0 +1,1 @@
+{"name":"Local: agcows","url":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\agcows.cpp","tests":[{"id":1723708076075,"input":"1 \n5 3\n1\n2\n8\n4\n9","output":"3"},{"id":1723708985685,"input":"1\n5 5\n1\n2\n3\n4\n5","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\agcows.cpp","group":"local","local":true}

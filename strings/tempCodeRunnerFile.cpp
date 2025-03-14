@@ -1,0 +1,1 @@
+ reverse(s.begin(),s.begin()+a/2);

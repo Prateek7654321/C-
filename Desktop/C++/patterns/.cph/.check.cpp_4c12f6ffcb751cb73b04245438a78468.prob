@@ -1,0 +1,1 @@
+{"name":"Local: check","url":"c:\\Users\\itspr\\Desktop\\C++\\patterns\\check.cpp","tests":[{"id":1679508710450,"input":"3\n2\n1 2\n4\n2 2 3 4\n1\n1","output":"1\n2\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\itspr\\Desktop\\C++\\patterns\\check.cpp","group":"local","local":true}
