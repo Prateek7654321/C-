@@ -1,1 +1,2 @@
 "fixing bugs"
+adding on bug-fixing branch to check conflicts
