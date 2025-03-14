@@ -1,2 +1,6 @@
 "fixing bugs"
+
 working on master branmch 
+
+adding on bug-fixing branch to check conflicts
+
