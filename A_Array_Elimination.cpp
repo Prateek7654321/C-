@@ -1,7 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-int main()
+#define int long long
+void fillmap(int x, map<int, int> &mp)
+{
+    int a = 0;
+    while (x != 0)
+    {
+        if ((x & 1) == 1)
+            mp[a]++;
+        a++;
+        x = x >> 1;
+    }
+}
+signed main()
 {
     int t;
     cin >> t;
@@ -10,42 +21,47 @@ int main()
         int n;
         cin >> n;
         vector<int> v;
-        bool flag = false;
+        map<int, int> mp;
+        bool flags = true;
         for (int i = 0; i < n; i++)
         {
             int x;
             cin >> x;
-            v.push_back(x);
             if (x != 0)
-                flag = true;
+                flags = false;
+            v.push_back(x);
+            fillmap(x, mp);
         }
-        sort(v.begin(), v.end());
-        cout << 1 <<" ";
-        if (!flag)
+        if (flags)
         {
-            for (int i = 2; i <= n; i++)
+            for (int i = 1; i <= n; i++)
                 cout << i << " ";
             cout << endl;
         }
         else
         {
-            map<int, int> mp;
-            for (int i = 1; i < n; i++)
+            vector<int> ans;
+            int range = INT_MAX;
+            for (auto it = mp.begin(); it != mp.end(); it++)
+                range = min(range, it->second);
+
+            for (int i = 1; i <= range; i++)
             {
-                mp[v[i] - v[i - 1]]++;
-            }
-            if (mp.size() == 1)
-            {
-                auto it = mp.begin();
-                if (it->first == 0)
+                bool flag = true;
+                for (auto it = mp.begin(); it != mp.end(); it++)
                 {
-                    cout << 2 << " " << v.size() << endl;
+                    if (((it->second) % i) != 0)
+                    {
+                        flag = false;
+                        break;
+                    }
                 }
-                else
-                {
-                    cout << 2 << endl;
-                }
+                if (flag)
+                    ans.push_back(i);
             }
+            for (int i = 0; i < ans.size(); i++)
+                cout << ans[i] << " ";
+            cout << endl;
         }
     }
 }

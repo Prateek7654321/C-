@@ -1,0 +1,1 @@
+{"name":"Local: weireno","url":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\weireno.cpp","tests":[{"id":1747637837932,"input":"5\n1 2 3 4 5\n2\n2 4 2\n1 1 1","output":"12\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\itspr\\OneDrive\\Desktop\\C++\\weireno.cpp","group":"local","local":true}

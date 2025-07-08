@@ -1,35 +1,50 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
+#define int long long 
+void solve()
+{
+    int n, cost;
+    cin >> n >> cost;
+    string s;
+    cin >> s;
+    sort(s.begin(),s.end());
+    vector<int> freq;
+    int count = 1;
+    for (int i = 1; i < s.size(); i++)
+    {
+        if (s[i] == s[i - 1])
+            count++;
+        else
+        {
+            freq.push_back(count);
+            count = 1;
+        }
+    }
+    freq.push_back(count);
+    sort(freq.begin(), freq.end());
+    int present = 1;
+    int ans = 0;
+    for (int i = 0; i < freq.size(); i++)
+    {
+        int sum = (freq[i] * (2 * present + freq[i] - 1)) / 2;
+        if (sum >= cost)
+            ans += cost;
+        else
+        {
+            ans += sum;
+            present = present + (freq[i]);
+        }
+    }
+    cout << ans << endl;
+}
+
 signed main()
 {
-    int t;
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int t = 1;
     cin >> t;
-    while (t--)
-    {
-        int n, x;
-        cin >> n >> x;
-        string s;
-        cin >> s;
-        map<char, int> mp;
-        for (int i = 0; i < s.size(); i++)
-            mp[s[i]]++;
-        int ans = 0;
-        vector<int> cost;
-        for (auto it = mp.begin(); it != mp.end(); it++)
-            cost.push_back(it->second);
-        int initial = 1;
-        for (int i = 0; i <cost.size(); i++)
-        {
-            int choice1 = ((cost[i]) * (2 * initial + (cost[i] - 1))) / 2;
-            if (choice1 < x)
-            {
-                ans += choice1;
-                initial = initial + cost[i];
-            }
-            else
-                ans += x;
-        }
-        cout << ans << endl;
-    }
+    for (int i = 0; i < t; i++)
+        solve();
 }
